@@ -32,6 +32,7 @@ app.listen(4000, function (error) {
 // usando query string 
 app.get('/videos', function (req, res) {
     var canal = req.query['canal'] // as qy-string pega do vetor são sempre opcionais 
-    canal != null ? res.send('Bem vindo ao meu site o canal é ' + canal) :
+    canal != null ? res.send('Bem vindo ao meu site o super canal é ' + canal) :
         res.send('Bem vindo ao meu site');
 });
+
